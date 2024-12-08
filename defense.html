@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yixin Shen &ndash; Defense</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+
+            <div id="author-name" class="alignable pull-left">Yixin Shen</div>
+            <ul id="navlist" class="alignable pull-right navbar-ul">
+
+
+                        <li class="alignable pull-left nav-list"><a href="index.html">Home</a>
+
+
+                        /
+
+                        </li>
+
+
+
+                        <li class="alignable pull-left nav-list"><a href="defense.html">PhD Defense</a>
+
+
+                        </li>
+
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+
+            <div class="container content">
+    <h1 id="defense"></h1>
+  </header>
+  <div>
+<h2>PhD Defense</h2>
+<p>I defended my thesis entitled "Classical and quantum cryptanalysis for Euclidean lattices and subset sum" on May 11th, 2021.</p>
+<p>The manuscript is available <a href="main.pdf">here</a>. The slides are available <a href="slides/slides_defense.pdf">here</a>.</p>
+<h2>Jury</h2>
+<ul>
+<li>Frédéric Magniez - CNRS, Université de Paris (Directeur de thèse)</li>
+<li>Elham Kashefi - CNRS, Sorbonne Université (Rapporteuse)</li>
+<li>Damien Stehlé - Ecole Normale Supérieure de Lyon (Rapporteur)</li>
+<li>Léo Ducas - Centrum Wiskunde & Informatica (Examinateur)</li>
+<li>Michele Mosca - University of Waterloo (Examinateur)</li>
+<li>María Naya-Plasencia - Inria de Paris (Examinatrice)</li>
+<li>Simon Perdrix - CNRS, Université de Lorraine (Examinateur)</li>
+<li>Jean-Pierre Tillich - Inria de Paris (Président du jury)</li>
+</ul>
+<h2>Abstract</h2>
+<p>Post-quantum cryptography refers to a branch of cryptography aimed at designing non- quantum (ie. classical) cryptographic systems which are secure against an adversary having a quantum computer. In this thesis we focus on the study of two fondamental problems for post-quantum cryptography: the Shortest Vector problem (SVP) and the random Subset-Sum problem.</p>
+<p>The SVP asks to find the shortest non-zero vector of a given lattice. It serves as a gauge to quantify the security of lattice-based cryptography which is wildly considered to be promising for the post-quantum era. The main approaches to solve the SVP are the sieving algorithms, which use exponential time and space, and the enumeration algorithms, which use superexponential time and polynomial space. In this thesis, we first give a provable time memory trade-off which roughly interpolates between the resource guarantees of sieving algorithms and those of enumeration algorithms. We then show the fastest state-of-the-art provable quantum algorithm that solves SVP using 2^(0.9535+o(n)) time and requires 2^(0.5n+o(n)) classical memory but only poly(n) qubits. We also provide the fastest classical algorithm in the provable setting whose memory is 2^(0.5n+o(n)). As for the enumeration algorithms, it was previously commonly believed that they can benefit from a quantum quadratic speed-up using Grover's algorithm. We show that the quadratic speed-up can indeed be achevied for lattice enumeration and its cylinder and discrete pruning variants, but with more sophisticated quantum algorithms such as quantum walk on trees. Our quantum speed-up applies further to extreme pruning where one repeats enumeration over many reduced bases: a naive approach would only decrease the classical cost mt (where m is the number of bases and t is the number of operations of a single enumeration) to m*sqrt(t) quantum operations, but we bring it down to sqrt(mt).</p>
+<p>The random subset-sum problem also underlies some cryptographic schemes aiming at post-quantum security, although it is mostly of academic nature. In a cryptanalysis context, it often serves as a cryptanalytic tool as many problems on which modern cryptography is build can be expressed as some (vectorial) versions of the subset sum problem. More recently it is also shown that it can be used as a building block in some quantum hidden shift algorithms, which have applications in quantum cryptanalysis of isogeny-based and symmetric cryptographic schemes.</p>
+<p>In this thesis, we present new classical and quantum algorithms for solving random subset- sum instances. We first show the fastest state-of-the-art classical algorithm using Õ(2^0.283n) time. Next, we improve the state of the art of quantum algorithms for this problem in several directions. We devise an algorithm with asymptotic running time Õ(2^0.236n), with the advantage of using classical memory with quantum random access. The previously known algorithms all used the quantum walk framework, and required quantum memory with quantum random access. We also propose faster quantum walks for subset-sum with time complexity Õ(2^0.216n). This time is dependent on a heuristic on quantum walk updates that is also required by the previous algorithms. We show how to partially overcome this heuristic, and we obtain a quantum algorithm with time Õ(2^0.218n) requiring only the standard subset-sum heuristics.</p></div>
+
+</div>
+</div>
+
+</body>
+<footer>
+
+</footer>
